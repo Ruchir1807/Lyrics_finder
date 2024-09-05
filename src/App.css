@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  height: auto;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-family: "PopArt";
+  font-size: 50px;
+  color: #ff7a8a;
+}
+
+pre {
+  font-size: 17px; /* Set the font size to your desired value */
+  color: #113a5d;
+  line-height: 1.5; /* Adjust line height for better readability */
+  font-family: "Montserrat", sans-serif; /* Ensure consistent font family */
+}
+
+hr {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Center the inputs and button */
+  gap: 10px;
+}
+
+.inp {
+  width: 200px;
+  height: 40px;
+  border: none;
+  margin: 0px 10px;
+  padding-left: 6px;
+  border-radius: 10px;
+  font-size: 22px;
+  font-family: "Roboto";
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  .inp,
+  .btn {
+    width: 100%;
+    font-size: 18px;
+  }
+  pre {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: left;
+  }
+}
